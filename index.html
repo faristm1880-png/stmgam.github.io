@@ -6,13 +6,8 @@
   <title>STM Games | دنیای بازی‌ها</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -32,6 +27,13 @@
       border-bottom: 1px solid #29324d;
     }
 
+    .header-left {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
     .logo {
       font-size: 24px;
       font-weight: bold;
@@ -44,231 +46,18 @@
       margin-right: 14px;
     }
 
-    nav a:hover {
-      color: #8b9cff;
-    }
+    nav a:hover { color: #8b9cff; }
 
-    .hero {
-      min-height: 75vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 30px 20px;
-      background:
-        radial-gradient(ellipse at top, #26346b 0%, #0b1020 65%);
-    }
-
-    .tag {
-      color: #aebaff;
-      background: #1b2546;
-      padding: 8px 15px;
-      border-radius: 30px;
+    .search-trigger {
+      border: 0;
+      cursor: pointer;
+      font-family: inherit;
       font-size: 14px;
-    }
-
-    h1 {
-      font-size: clamp(36px, 8vw, 66px);
-      margin: 24px 0 12px;
-    }
-
-    h1 span {
-      color: #8b9cff;
-    }
-
-    .hero p {
-      color: #b8c1dd;
-      line-height: 2;
-      max-width: 550px;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 22px;
-      padding: 14px 28px;
-      border-radius: 12px;
-      background: #788bff;
-      color: #080d1c;
-      text-decoration: none;
       font-weight: bold;
+      color: #080d1c;
+      background: #788bff;
+      border-radius: 10px;
+      padding: 11px 15px;
     }
 
-    .section {
-      padding: 45px 20px;
-      text-align: center;
-    }
-
-    .section-intro {
-      color: #b8c1dd;
-      line-height: 2;
-      max-width: 700px;
-      margin: 0 auto 30px;
-    }
-
-    .genre-title {
-      color: #8b9cff;
-      font-size: 32px;
-      margin-bottom: 8px;
-    }
-
-    .genre-meaning {
-      color: #aebaff;
-      margin-bottom: 35px;
-    }
-
-    .game-card {
-      max-width: 850px;
-      margin: 0 auto;
-      padding: 25px;
-      text-align: right;
-      background: #11182b;
-      border: 1px solid #29324d;
-      border-radius: 18px;
-    }
-
-    .game-title {
-      color: #aebaff;
-      font-size: 27px;
-      margin-top: 0;
-    }
-
-    .game-description {
-      color: #d0d7ef;
-      line-height: 2.2;
-    }
-
-    .game-meta {
-      color: #9ca9d1;
-      font-size: 14px;
-      line-height: 2;
-    }
-
-    .media-placeholder {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 180px;
-      margin: 20px 0;
-      padding: 20px;
-      text-align: center;
-      color: #9ca9d1;
-      background: #0b1020;
-      border: 1px dashed #465580;
-      border-radius: 12px;
-    }
-
-    .trailer-placeholder {
-      min-height: 120px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 22px;
-      color: #8791b2;
-      border-top: 1px solid #29324d;
-      line-height: 2;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        justify-content: center;
-      }
-
-      nav a {
-        margin: 0 8px;
-      }
-
-      .game-card {
-        padding: 18px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <div class="logo">STM GAMES 🎮</div>
-
-    <nav>
-      <a href="#home">خانه</a>
-      <a href="#games">بازی‌ها</a>
-      <a href="#roguelike">روگ‌لایک</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <span class="tag">دنیای بازی‌ها، ساخته‌شده برای گیمرها</span>
-
-      <h1>Welcome to <span>STM Games</span></h1>
-
-      <p>
-        به دنیای STM Games خوش آمدید!
-        اینجا قراره با بازی‌های جذاب آشنا بشی،
-        ماجراجویی‌های تازه پیدا کنی و بازی‌های ساخته‌شده
-        توسط ما رو دنبال کنی.
-      </p>
-
-      <a class="button" href="#games">کشف دنیای بازی‌ها</a>
-    </section>
-
-    <section class="section" id="games">
-      <h2>🎮 بازی‌ها</h2>
-      <p class="section-intro">
-        بازی‌های جذاب از سبک‌های مختلف را اینجا کشف کن!
-      </p>
-
-      <section id="roguelike">
-        <h2 class="genre-title">Roguelike</h2>
-
-        <p class="genre-meaning">
-          روگ‌لایک: سبکی از بازی‌ها با چالش‌ها،
-          انتخاب‌های مهم و تلاش‌های دوباره برای پیشرفت.
-        </p>
-
-        <article class="game-card" id="cloverpit">
-          <h3 class="game-title">🎰 CloverPit</h3>
-
-          <p class="game-description">
-            در بازی CloverPit، خودت رو در اتاقی گرفتار می‌بینی
-            که برای فرار از آن باید با یک دستگاه اسلات شانس
-            و مهارتت رو امتحان کنی. باید پول کافی به دست بیاری
-            و بدهی‌های تعیین‌شده رو در زمان مشخص پرداخت کنی؛
-            وگرنه اوضاع به ضررت تموم می‌شه.
-
-            <br><br>
-
-            با پیشروی در بازی، می‌تونی از آیتم‌ها و قابلیت‌های
-            مختلف استفاده کنی و ترکیب‌هایی بسازی که شانس
-            موفقیتت رو بیشتر کنن. هر انتخاب اهمیت داره و باید
-            تصمیم بگیری چطور از امکاناتت استفاده کنی تا از این
-            چرخه‌ی خطرناک فرار کنی.
-          </p>
-
-          <p class="game-meta">
-            ژانر: روگ‌لایک، استراتژی و شبیه‌ساز اسلات
-          </p>
-
-          <div class="media-placeholder" id="cloverpit-image">
-            🖼️ تصویر بازی CloverPit
-            <br>
-            تصویر بازی در آینده اینجا قرار می‌گیرد.
-          </div>
-
-          <div class="media-placeholder trailer-placeholder"
-               id="cloverpit-trailer">
-            ▶️ تریلر CloverPit
-            <br>
-            تریلر بازی در آینده اینجا قرار می‌گیرد.
-          </div>
-        </article>
-      </section>
-    </section>
-  </main>
-
-  <footer>
-    © 2026 STM Games | ساخته‌شده با علاقه به بازی‌سازی
-  </footer>
-</body>
-        </html>
+    .search-trigger:hover,
