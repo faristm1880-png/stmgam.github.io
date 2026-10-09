@@ -61,3 +61,526 @@
     }
 
     .search-trigger:hover,
+    .button:hover { background: #9aa7ff; }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px 20px;
+      background: radial-gradient(
+        ellipse at top, #26346b 0%, #0b1020 65%
+      );
+    }
+
+    .tag {
+      color: #aebaff;
+      background: #1b2546;
+      padding: 8px 15px;
+      border-radius: 30px;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 8vw, 66px);
+      margin: 24px 0 12px;
+    }
+
+    h1 span { color: #8b9cff; }
+
+    .hero p {
+      color: #b8c1dd;
+      line-height: 2;
+      max-width: 550px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 14px 28px;
+      border-radius: 12px;
+      background: #788bff;
+      color: #080d1c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 45px 20px;
+      text-align: center;
+    }
+
+    .section-intro {
+      color: #b8c1dd;
+      line-height: 2;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .genre-title {
+      color: #8b9cff;
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .genre-meaning {
+      color: #aebaff;
+      margin-bottom: 35px;
+    }
+
+    .game-card {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 25px;
+      text-align: right;
+      background: #11182b;
+      border: 1px solid #29324d;
+      border-radius: 18px;
+    }
+
+    .game-title {
+      color: #aebaff;
+      font-size: 27px;
+      margin-top: 0;
+    }
+
+    .game-description {
+      color: #d0d7ef;
+      line-height: 2.2;
+    }
+
+    .game-meta {
+      color: #9ca9d1;
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    .media-placeholder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 180px;
+      margin: 20px 0;
+      padding: 20px;
+      text-align: center;
+      color: #9ca9d1;
+      background: #0b1020;
+      border: 1px dashed #465580;
+      border-radius: 12px;
+    }
+
+    .trailer-placeholder { min-height: 120px; }
+
+    /* بخش پیدا کردن بازی */
+    .finder {
+      display: none;
+      padding: 30px 20px;
+      background: #0e1528;
+      border-bottom: 1px solid #29324d;
+    }
+
+    .finder.open { display: block; }
+    .finder-inner { max-width: 900px; margin: 0 auto; }
+    .finder h2 { margin-top: 0; color: #aebaff; }
+
+    .finder-intro {
+      color: #b8c1dd;
+      line-height: 1.9;
+    }
+
+    .finder-fields {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin: 22px 0;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      text-align: right;
+      color: #d0d7ef;
+      font-size: 14px;
+    }
+
+    .field select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #465580;
+      border-radius: 10px;
+      background: #11182b;
+      color: #f4f5ff;
+      font: inherit;
+    }
+
+    .finder-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .finder-actions button {
+      cursor: pointer;
+      border: 0;
+      border-radius: 10px;
+      padding: 12px 18px;
+      font: inherit;
+      font-weight: bold;
+    }
+
+    .find-button {
+      background: #788bff;
+      color: #080d1c;
+    }
+
+    .reset-button {
+      background: #222d49;
+      color: #e1e6ff;
+    }
+
+    .results-heading {
+      margin: 26px 0 14px;
+      color: #aebaff;
+    }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 14px;
+    }
+
+    .result-card {
+      overflow: hidden;
+      border: 1px solid #29324d;
+      background: #11182b;
+      border-radius: 14px;
+      text-align: right;
+    }
+
+    .result-art {
+      min-height: 125px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 18px;
+      text-align: center;
+      font-size: 34px;
+      background: linear-gradient(135deg, #26346b, #171e39);
+    }
+
+    .result-content { padding: 15px; }
+
+    .result-content h4 {
+      margin: 0 0 8px;
+      color: #aebaff;
+      font-size: 18px;
+    }
+
+    .result-content p {
+      color: #b8c1dd;
+      line-height: 1.8;
+      font-size: 13px;
+    }
+
+    .result-content a { color: #aebaff; }
+    .no-results { color: #b8c1dd; line-height: 2; }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      color: #8791b2;
+      border-top: 1px solid #29324d;
+      line-height: 2;
+    }
+
+    @media (max-width: 700px) {
+      header { justify-content: center; }
+      .header-left { justify-content: center; }
+      nav { text-align: center; }
+      nav a { margin: 0 8px; }
+      .finder-fields { grid-template-columns: 1fr; }
+      .game-card { padding: 18px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <div class="logo">STM GAMES 🎮</div>
+
+      <button
+        class="search-trigger"
+        id="toggleFinder"
+        type="button"
+        aria-expanded="false"
+        aria-controls="gameFinder">
+        🔎 پیدا کردن بازی
+      </button>
+    </div>
+
+    <nav>
+      <a href="#home">خانه</a>
+      <a href="#games">بازی‌ها</a>
+      <a href="#roguelike">روگ‌لایک</a>
+    </nav>
+  </header>
+
+  <!-- بخش جست‌وجوی بازی -->
+  <section class="finder" id="gameFinder">
+    <div class="finder-inner">
+      <h2>🔎 بازی مناسب خودت رو پیدا کن!</h2>
+
+      <p class="finder-intro">
+        اسم بازی رو نمی‌دونی؟ ویژگی‌هایی که دوست داری انتخاب کن
+        تا بازی‌های موجود در سایت رو برات پیدا کنیم.
+      </p>
+
+      <div class="finder-fields">
+        <label class="field">
+          سبک بازی
+          <select id="genreFilter">
+            <option value="any">فرقی نمی‌کنه</option>
+            <option value="roguelike">روگ‌لایک</option>
+            <option value="strategy">استراتژی</option>
+            <option value="horror">ترسناک</option>
+            <option value="survival">بقا</option>
+            <option value="adventure">ماجراجویی</option>
+            <option value="action">اکشن</option>
+          </select>
+        </label>
+
+        <label class="field">
+          نوع گرافیک
+          <select id="graphicsFilter">
+            <option value="any">فرقی نمی‌کنه</option>
+            <option value="pixel">پیکسلی</option>
+            <option value="3d">سه‌بعدی</option>
+            <option value="cartoon">کارتونی</option>
+            <option value="realistic">واقع‌گرایانه</option>
+          </select>
+        </label>
+
+        <label class="field">
+          دستگاه
+          <select id="platformFilter">
+            <option value="any">فرقی نمی‌کنه</option>
+            <option value="pc">کامپیوتر</option>
+            <option value="mobile">موبایل</option>
+            <option value="web">مرورگر</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="finder-actions">
+        <button class="find-button" id="findGames" type="button">
+          پیدا کردن بازی‌ها
+        </button>
+
+        <button class="reset-button" id="resetFilters" type="button">
+          پاک کردن انتخاب‌ها
+        </button>
+      </div>
+
+      <h3 class="results-heading" id="resultsHeading" aria-live="polite">
+        بازی‌های پیشنهادی
+      </h3>
+
+      <div class="results-grid" id="resultsGrid">
+        <p class="no-results">
+          ویژگی‌هات رو انتخاب کن و روی «پیدا کردن بازی‌ها» بزن.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="hero" id="home">
+      <span class="tag">دنیای بازی‌ها، ساخته‌شده برای گیمرها</span>
+
+      <h1>Welcome to <span>STM Games</span></h1>
+
+      <p>
+        به دنیای STM Games خوش آمدید!
+        اینجا قراره با بازی‌های جذاب آشنا بشی،
+        ماجراجویی‌های تازه پیدا کنی و بازی‌های ساخته‌شده
+        توسط ما رو دنبال کنی.
+      </p>
+
+      <a class="button" href="#games">کشف دنیای بازی‌ها</a>
+    </section>
+
+    <section class="section" id="games">
+      <h2>🎮 بازی‌ها</h2>
+
+      <p class="section-intro">
+        بازی‌های جذاب از سبک‌های مختلف را اینجا کشف کن!
+      </p>
+
+      <section id="roguelike">
+        <h2 class="genre-title">Roguelike</h2>
+
+        <p class="genre-meaning">
+          روگ‌لایک: سبکی از بازی‌ها با چالش‌ها،
+          انتخاب‌های مهم و تلاش‌های دوباره برای پیشرفت.
+        </p>
+
+        <article class="game-card" id="cloverpit">
+          <h3 class="game-title">🎰 CloverPit</h3>
+
+          <p class="game-description">
+            در بازی CloverPit، خودت رو در اتاقی گرفتار می‌بینی
+            که برای فرار از آن باید با یک دستگاه اسلات شانس
+            و مهارتت رو امتحان کنی. باید پول کافی به دست بیاری
+            و بدهی‌های تعیین‌شده رو در زمان مشخص پرداخت کنی؛
+            وگرنه اوضاع به ضررت تموم می‌شه.
+
+            <br><br>
+
+            با پیشروی در بازی، می‌تونی از آیتم‌ها و قابلیت‌های
+            مختلف استفاده کنی و ترکیب‌هایی بسازی که شانس
+            موفقیتت رو بیشتر کنن. هر انتخاب اهمیت داره و باید
+            تصمیم بگیری چطور از امکاناتت استفاده کنی تا از این
+            چرخه‌ی خطرناک فرار کنی.
+          </p>
+
+          <p class="game-meta">
+            ژانر: روگ‌لایک، استراتژی و شبیه‌ساز اسلات
+          </p>
+
+          <div class="media-placeholder" id="cloverpit-image">
+            🖼️ تصویر بازی CloverPit
+            <br>
+            تصویر بازی در آینده اینجا قرار می‌گیرد.
+          </div>
+
+          <div
+            class="media-placeholder trailer-placeholder"
+            id="cloverpit-trailer">
+            ▶️ تریلر CloverPit
+            <br>
+            تریلر بازی در آینده اینجا قرار می‌گیرد.
+          </div>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 STM Games | ساخته‌شده با علاقه به بازی‌سازی
+  </footer>
+
+  <script>
+    // فهرست بازی‌ها؛ بازی‌های جدید را بعداً می‌توانیم به این فهرست اضافه کنیم.
+    const games = [
+      {
+        name: "CloverPit",
+        emoji: "🎰",
+        description: "روگ‌لایک و استراتژی؛ تصمیم بگیر و برای فرار تلاش کن.",
+        genres: ["roguelike", "strategy"],
+        graphics: ["3d"],
+        platforms: ["pc"],
+        link: "#cloverpit"
+      }
+    ];
+
+    const toggleButton = document.getElementById("toggleFinder");
+    const finder = document.getElementById("gameFinder");
+    const resultsGrid = document.getElementById("resultsGrid");
+    const resultsHeading = document.getElementById("resultsHeading");
+
+    // باز و بسته کردن جست‌وجو
+    toggleButton.addEventListener("click", () => {
+      const isOpen = finder.classList.toggle("open");
+
+      toggleButton.setAttribute("aria-expanded", String(isOpen));
+
+      if (isOpen) {
+        finder.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    });
+
+    // پیدا کردن بازی‌های مطابق انتخاب کاربر
+    function showGames() {
+      const genre = document.getElementById("genreFilter").value;
+      const graphics = document.getElementById("graphicsFilter").value;
+      const platform = document.getElementById("platformFilter").value;
+
+      const matches = games.filter(game =>
+        (genre === "any" || game.genres.includes(genre)) &&
+        (graphics === "any" || game.graphics.includes(graphics)) &&
+        (platform === "any" || game.platforms.includes(platform))
+      );
+
+      resultsGrid.replaceChildren();
+      resultsHeading.textContent = `نتیجه‌ها: ${matches.length} بازی`;
+
+      if (matches.length === 0) {
+        const message = document.createElement("p");
+        message.className = "no-results";
+        message.textContent =
+          "فعلاً بازی‌ای با این مشخصات در فهرست ما نیست. " +
+          "انتخاب‌های دیگه رو امتحان کن؛ با اضافه‌شدن بازی‌های بیشتر، " +
+          "نتیجه‌ها هم بیشتر می‌شن.";
+
+        resultsGrid.appendChild(message);
+        return;
+      }
+
+      matches.forEach(game => {
+        const card = document.createElement("article");
+        card.className = "result-card";
+
+        const art = document.createElement("div");
+        art.className = "result-art";
+        art.setAttribute("aria-label", `نماد ${game.name}`);
+        art.textContent = game.emoji;
+
+        const content = document.createElement("div");
+        content.className = "result-content";
+
+        const title = document.createElement("h4");
+        title.textContent = game.name;
+
+        const description = document.createElement("p");
+        description.textContent = game.description;
+
+        const link = document.createElement("a");
+        link.href = game.link;
+        link.textContent = "دیدن صفحه‌ی بازی ←";
+
+        content.append(title, description, link);
+        card.append(art, content);
+        resultsGrid.appendChild(card);
+      });
+    }
+
+    document.getElementById("findGames").addEventListener("click", showGames);
+
+    // پاک کردن فیلترها
+    document.getElementById("resetFilters").addEventListener("click", () => {
+      document.getElementById("genreFilter").value = "any";
+      document.getElementById("graphicsFilter").value = "any";
+      document.getElementById("platformFilter").value = "any";
+
+      resultsHeading.textContent = "بازی‌های پیشنهادی";
+      resultsGrid.replaceChildren();
+
+      const message = document.createElement("p");
+      message.className = "no-results";
+      message.textContent =
+        "ویژگی‌هات رو انتخاب کن و روی «پیدا کردن بازی‌ها» بزن.";
+
+      resultsGrid.appendChild(message);
+    });
+  </script>
+</body>
+  </html>
